@@ -8,9 +8,17 @@
 	<title>Racheal's vue bulb</title>
 </head>
 <body>
+	<div id="app">
+		<div v-if="switchBulb"> 
+			<img class="bulb-img" src="./images/another_7.jpg" alt="image for a bulb on">
+		</div> 
+		<div v-else> 
+		 <img class="bulb-img bulb_2" src="./images/another_8.jpg" alt="image for a bulb off">
+	 </div> 
+	 <button  v-on:click="changeSwitchValue" type="button">On/Off</button>
+	 
+</div> 
 	
-
-
 	<script src="./scripts/vue.js"></script>
     <script src="./scripts/bulb.js"></script>
 </body>
